@@ -1,0 +1,297 @@
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.backGround {
+   background: url('../kerz-desktop-main-bkgrd.jpg') no-repeat center center fixed;
+    /*background-color : yellow ;*/
+    -webkit-background-size: cover ;
+    -moz-background-size:cover ;
+    background-size: cover;
+    top:auto;
+    bottom:auto;
+
+   
+   
+    -o-background-size: 100% 100%; 
+}
+
+.full-gal {
+     background: url('../image-1.jpg') no-repeat center center fixed;
+   /*background-color : yellow ;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height:100% ;
+    -o-background-size: cover;
+}
+.opak-gal{
+opacity: 0.4 ;
+}
+/*justify nav linx*/
+
+.navbar-nav.nav-justified > li{
+    float:none;
+}
+
+/*slide welkome from left*/
+#homeText{
+    visibility: hidden;
+
+}
+
+.animLeft{
+    animation-name: animLeft;
+    -webkit-animation-name: animLeft;  
+    -ms-animation-name: animLeft; 
+
+    animation-duration: 2.5s; 
+    -webkit-animation-duration: 2.5s;
+    -ms-animation-duration: 2.5s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+    -ms-animation-timing-function: ease-in-out;
+
+    visibility: visible !important; 
+}
+
+@keyframes animLeft {
+    0% {
+        transform: translateX(150%);
+    }
+    50%{
+        transform: translateX(-8%);
+    }
+    65%{
+        transform: translateX(4%);
+    }
+    80%{
+        transform: translateX(-4%);
+    }
+    95%{
+        transform: translateX(2%);
+    }           
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes animLeft {
+    0% {
+        -webkit-transform: translateX(150%);
+    }
+    50%{
+        -webkit-transform: translateX(-8%);
+    }
+    65%{
+        -webkit-transform: translateX(4%);
+    }
+    80%{
+        -webkit-transform: translateX(-4%);
+    }
+    95%{
+        -webkit-transform: translateX(2%);
+    }           
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+/*int exp*/
+@-ms-keyframes animLeft {
+    0% {
+        -ms-transform: translateX(150%);
+    }
+    50%{
+        -ms-transform: translateX(-8%);
+    }
+    65%{
+        -ms-transform: translateX(4%);
+    }
+    80%{
+        -ms-transform: translateX(-4%);
+    }
+    95%{
+        -ms-transform: translateX(2%);
+    }           
+    100% {
+        -ms-transform: translateX(0%);
+    }
+}
+
+/*end slide welkome from left*/
+h1{
+    font-size : 485% ;
+     font-weight: 700;
+    color: red ;
+  text-align :center ;
+    font-family: 'Mountains of Christmas', cursive; 
+    -webkit-text-stroke: 1.5px silver;
+    text-stroke: 1.5px silver;
+}
+
+hMine{
+    
+    font-size :60% ;
+    
+}
+.welkome{
+   
+   margin-top: 29.5%;
+   margin-left: 2%;
+   
+   /*border: 1px solid blue;
+   background-color: silver;*/
+
+   
+}
+
+h2,h3{
+	color: red ;
+	font-size : 185px ;
+	text-align :center ;
+	font-family: 'Mountains of Christmas', cursive;
+    -webkit-text-stroke: 1.5px silver;
+    text-stroke: 1.5px silver;
+}
+h4{
+	color: red ;
+	font-size : 55px ;
+	text-align :center ;
+	font-family: 'Mountains of Christmas', cursive;
+    -webkit-text-stroke: 1.5px silver;
+    text-stroke: 1.5px silver;
+}
+
+h5{
+    color: red ;
+    font-size : 25px ;
+    text-align :center ;
+    font-family: 'Mountains of Christmas', cursive;
+    -webkit-text-stroke: 1.5px silver;
+    text-stroke: 1.5px silver;
+}
+
+/*logo on homepage*/
+.logoImg {
+    width: 2%;
+    height : 2%;
+}
+
+/* Thumbnail Gallery */
+
+.thumbnail {
+	
+   background:#7f7f7f;
+  background:rgba(0,0,0,0.2);
+}
+
+/*rotate imgz*/
+
+ img.tranz:hover{
+ -webkit-transform:scale(1.148)rotate(360deg) ;
+  -moz-transform:scale(1.148)rotate(360deg) ;
+ -ms-transform:scale(1.148)rotate(360deg) ;
+ transform:scale(1.148)rotate(360deg) ;
+ 
+ -webkit-transition-duration:1s;
+  -moz-transition-duration:1s;
+ -ms-transition-duration:1s;
+ transition-duration:1s;
+ 
+ z-index: 2 ;
+ 
+}
+
+/*fade in img 1*/
+
+
+ 
+footer {
+    margin: 50px 0;
+}
+
+/*put imagez here for gallery-medium sized*/
+
+.gal-img-1{
+	background :url('img/imagez/kerz-gal-1-desktop.jpg');
+	
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone 
+ * 
+ */
+@media (max-width: 480px) {
+	
+	/*.thumbnail .price{
+		font-size : 14px ;
+	}
+	
+	.thumbnail .price sup{
+		font-size: 10px ;
+	}*/
+	
+	.tt{
+		background-image: url("../desky.jpg"); 
+	}
+}    
+
+
+/* Landscape phone to portrait tablet - imagez for mobile-tablet
+@media (max-width: 768px) {
+	
+	#myCarousel .item{
+	height : 310px ;
+	}
+	
+	#slide1 {
+		background : url('../../images/carousel_small_01.jpg')top center no-repeat ;
+	}
+	
+	#slide2 {
+		background : url('../../images/carousel_small_02.jpg')top center no-repeat ;
+	}
+	
+	#slide3 {
+		background : url('../../images/carousel_small_03.jpg')top center no-repeat ;
+	}
+	
+	.carousel-caption {
+		font-size : 16px ;
+	}
+	
+	.carousel-caption h4 {
+		font-size : 22px ;
+	}
+	
+}    */
+
+
+
+/* Large desktop 
+@media (min-width: 1200px) {
+	
+		#myCarousel .item{
+		height : 500px ;
+	}
+	
+	#slide1 {
+		background : url('../../images/carousel_large_01.jpg')top center no-repeat ;
+	}
+	
+	#slide2 {
+		background : url('../../images/carousel_large_02.jpg')top center no-repeat ;
+	}
+	
+	#slide3 {
+		background : url('../../images/carousel_large_03.jpg')top center no-repeat ;
+	}
+}    */
